@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SuperEgo+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">SuperEgo+</a>
+          <div class="nav-collapse">
+            <ul class="nav" id="nav-list">
+              <!--<li class="active"><a href="#">Start</a></li>-->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="mainspace">
+	  <div class="row-fluid">
+	    <div class="span12">
+	      <div id="startspace" onmouseover="shutDrawer()">
+  		    <br><br>	
+	        <h1><a onClick="newSuperEgoServer()">> New<br>SuperEgo+<br>Template</a></h1>
+	        <br><br>
+	      </div>
+	      <div class="row-fluid" id="templatespace" style="visibility:hidden; position:absolute; top:500px;">
+   		  	<div class="span4" id="template-blank">
+   		  		<h2>New.</h2>
+   		  	</div>
+   		  	<div class="span4" id="template-gta">
+   		  		<h2>GTA.</h2>
+   		  	</div>
+   		  	<div class="span4" id="template-pacman">
+   		  		<h2>Pacman.</h2>
+   		  	</div>
+   		  </div>
+	    </div>
+      </div>
+      	  
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="span7" id="ruledrawer" style="visibility:hidden">
+            <div>
+              <br>
+	          <h2>&nbsp;&nbsp;> Actions / Rules / Views</h2>
+		      <br>
+		      <div style="float:left; padding:23px; width:215px;">
+		        <input name="arvName" id="arvName" placeholder="Object Name" required /><br />
+		        <select id="arvType">
+				  <option value="action">Action</option>
+				  <option value="rule">Rule</option>
+				  <option value="view">View</option>
+				</select>
+		        <input name="arvCode" id="arvCode" placeholder="Code URL" /><br />
+		        <p style="text-align:right"><br /><strong><a onClick="saveForm()">SAVE >></a></strong></p>
+		      </div>
+		      <div style="float:right; padding-right:43px; top:-10px;">
+		        <h2>Views</h2>
+		        <div id="viewsquares">
+		        </div>
+		      </div>
+	       	  <div style="float:right; padding-right:33px; top:-10px;">
+		        <h2>Rules</h2>
+		        <div id="rulesquares">
+		        </div>
+		      </div>		      
+		      <div style="float:right; padding-right:33px; top:-10px;">
+		        <h2>Actions</h2>
+		        <div id="actionsquares">
+		        </div>
+		      </div>
+		      <br><br>
+<!--	       	  <div style="position:absolute; bottom:23px; right:23px;">
+      	        <h2><a onClick="shutDrawer()">DONE >></a> &nbsp;</h2>	      
+      	      </div> -->
+	    	</div>
+	      </div>
+	    </div>
+      </div>
+    </div>
+    
+    <div id="ruledrawerout" style="visibility:hidden;" onmouseover="openDrawer()">
+    </div>
+    
+     <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="./assets/js/bootstrap-popover.js"></script>
+    <script src="./assets/js/bootstrap-button.js"></script>
+    <script src="./assets/js/bootstrap-collapse.js"></script>
+    <script src="./assets/js/bootstrap-carousel.js"></scdript>
+    <script src="./assets/js/bootstrap-typeahead.js"></script>
+    <script src="./assets/js/superego.js"></script>    
+
+  </body>
+</html>
