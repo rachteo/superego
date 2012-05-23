@@ -50,23 +50,23 @@ function templateGo( n ) {
 		document.getElementById( "ruledrawerout" ).style.visibility = "visible";
 		controllers = 4;
 		arrows = 2;
-		tokens = 5;
-		document.getElementById( "startspace" ).innerHTML = "<br><br><h1 class='dropspace' id='start0'><a onClick='plusOne(0)'>></a> four.</h1> <h3 id='actionspace'></h3> <h1 class='dropspace' id='start1'><a onClick='plusOne(1)'>></a> two. </h1> <h3 id='rulespace'></h3> <h1 class='dropspace' id='start2'><a onClick='plusOne(2)'>></a> five + interface.</h1> <h3 id='viewspace'></h3> <br><br>";
+		tokens = 6;
+		document.getElementById( "startspace" ).innerHTML = "<br><br><h1 class='dropspace' id='start0'><a onClick='plusOne(0)'>></a> four.</h1> <h3 id='actionspace'></h3> <h1 class='dropspace' id='start1'><a onClick='plusOne(1)'>></a> two. </h1> <h3 id='rulespace'></h3> <h1 class='dropspace' id='start2'><a onClick='plusOne(2)'>></a> six.</h1> <h3 id='viewspace'></h3> <br><br>";
 	}
 	else if( n == 2 ) {
 		document.getElementById( "ruledrawerout" ).style.visibility = "visible";
 		controllers = 1;
 		arrows = 1;
-		tokens = 1;
-		document.getElementById( "startspace" ).innerHTML = "<br><br><h1 class='dropspace' id='start0'><a onClick='plusOne(0)'>></a> one. </h1> <h3 id='actionspace'></h3> <h1 class='dropspace' id='start1'><a onClick='plusOne(1)'>></a> one. </h1> <h3 id='rulespace'></h3> <h1 class='dropspace' id='start2'><a onClick='plusOne(2)'>></a> one + interface.</h1> <h3 id='viewspace'></h3> <br><br>";		
+		tokens = 2;
+		document.getElementById( "startspace" ).innerHTML = "<br><br><h1 class='dropspace' id='start0'><a onClick='plusOne(0)'>></a> one. </h1> <h3 id='actionspace'></h3> <h1 class='dropspace' id='start1'><a onClick='plusOne(1)'>></a> one. </h1> <h3 id='rulespace'></h3> <h1 class='dropspace' id='start2'><a onClick='plusOne(2)'>></a> two.</h1> <h3 id='viewspace'></h3> <br><br>";		
 	}
 	else {
 		// open ruledrawer
 		openDrawer();
 		controllers = 1;
 		arrows = 1;
-		tokens = 1;
-		document.getElementById( "startspace" ).innerHTML = "<br><br><h1 class='dropspace' id='start0'><a onClick='plusOne(0)'>></a> one. </h1> <h3 id='actionspace'></h3> <h1 class='dropspace' id='start1'><a onClick='plusOne(1)'>></a> one. </h1> <h3 id='rulespace'></h3> <h1 class='dropspace' id='start2'><a onClick='plusOne(2)'>></a> one + interface.</h1> <h3 id='viewspace'></h3> <br><br>";
+		tokens = 2;
+		document.getElementById( "startspace" ).innerHTML = "<br><br><h1 class='dropspace' id='start0'><a onClick='plusOne(0)'>></a> one. </h1> <h3 id='actionspace'></h3> <h1 class='dropspace' id='start1'><a onClick='plusOne(1)'>></a> one. </h1> <h3 id='rulespace'></h3> <h1 class='dropspace' id='start2'><a onClick='plusOne(2)'>></a> two.</h1> <h3 id='viewspace'></h3> <br><br>";
 		document.getElementById( "ruledrawerout" ).style.visibility = "visible";		
 	}
 	
@@ -101,7 +101,7 @@ function plusOne( n ) {
 	else if( n == 2 ) {
 		tokens++;
 		j = arrows.toString();
-		j = "<a onClick='plusOne(2)'>></a> " + tokens + " + interface.";
+		j = "<a onClick='plusOne(2)'>></a> " + tokens + ".";
 	}
 	document.getElementById( "start" + n ).innerHTML = j; 
 }
