@@ -4966,9 +4966,8 @@ a.badge:hover {
 
 #ruledrawer, #ruledrawerout {
   position:absolute;
-  top:100px;
+  top:40px;
   left:0px;
-  height:640px;
   background-color: #ebebeb;
 }
 

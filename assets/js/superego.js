@@ -8,6 +8,9 @@ var drawerI;
 
 $(document).ready(function() {
 	
+	document.getElementById( "ruledrawer" ).style.height = window.innerHeight + "px";
+	document.getElementById( "ruledrawerout" ).style.height = window.innerHeight + "px";	
+	
 	// template picking bits    
 	$('#template-blank').click(function () {
 		document.getElementById("startspace").style.visibility = "visible";
@@ -138,29 +141,29 @@ function saveForm() {
 	// get info? arvName + arvType
 	// make id-able square on the right
 	var n = document.getElementById( 'arvName' ).value;
-	var t = document.getElementById( 'arvType' ).value;
+//	var t = document.getElementById( 'arvType' ).value;
 	var dndsetup = "<div class='drawersquare' draggable='true' id='";
-	if( t == "action" ) {
-		aCounter++;
-		$('#actionsquares').append( dndsetup + "a" + aCounter + "'><strong>&nbsp;[" + aCounter + "] </strong>" + n + "<br /></div><br />" );
-		document.getElementById( "a" + aCounter ).addEventListener('dragstart', handleDragStart, false);
-		document.getElementById( "a" + aCounter ).addEventListener('dragend', handleDragEnd, false);
+//	if( t == "action" ) {
+//		aCounter++;
+//		$('#actionsquares').append( dndsetup + "a" + aCounter + "'><strong>&nbsp;[" + aCounter + "] </strong>" + n + "<br /></div><br />" );
+//		document.getElementById( "a" + aCounter ).addEventListener('dragstart', handleDragStart, false);
+//		document.getElementById( "a" + aCounter ).addEventListener('dragend', handleDragEnd, false);
 
-	}
-	else if( t == "rule" ) {
+//	}
+//	else if( t == "rule" ) {
 		rCounter++;
 		$('#rulesquares').append( dndsetup + "r" + rCounter + "'><strong>&nbsp;[" + rCounter + "] </strong>" + n + "<br /></div><br />" );
 		document.getElementById( "r" + rCounter ).addEventListener('dragstart', handleDragStart, false);
 		document.getElementById( "r" + rCounter ).addEventListener('dragend', handleDragEnd, false);
 
-	}
-	else if( t == "view" ) {
-		vCounter++;
-		$('#viewsquares').append( dndsetup + "v" + vCounter + "'><strong>&nbsp;[" + vCounter + "] </strong>" + n + "<br /></div><br />" );
-		document.getElementById( "v" + vCounter ).addEventListener('dragstart', handleDragStart, false);
-		document.getElementById( "v" + vCounter ).addEventListener('dragend', handleDragEnd, false);
+//	}
+//	else if( t == "view" ) {
+//		vCounter++;
+//		$('#viewsquares').append( dndsetup + "v" + vCounter + "'><strong>&nbsp;[" + vCounter + "] </strong>" + n + "<br /></div><br />" );
+//		document.getElementById( "v" + vCounter ).addEventListener('dragstart', handleDragStart, false);
+//		document.getElementById( "v" + vCounter ).addEventListener('dragend', handleDragEnd, false);
 
-	}
+//	}
 }
 
 
